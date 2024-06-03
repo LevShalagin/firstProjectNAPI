@@ -5,7 +5,8 @@
   "main": "hello.js",
   "private": true,
   "dependencies": {
-    "bindings": "~1.2.1"
+    "bindings": "~1.2.1",
+    "gyp": "^0.5.0"
   },
   "scripts": {
     "test": "node hello.js"
