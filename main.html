@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Список дел</title>
+  <title>Список событий</title>
   <script src="./main.js" defer></script>
 </head>
 
@@ -22,13 +22,14 @@
             </tr>
         </table>
     </div>
-    <div >
-        <table id="dateTable" cellspacing="0" rules="all" border="1">
-            <tr>
-                <th>№</th>
-                <th>Дата</th>
-                <th>Событие</th>
-            </tr>
+    <div>
+        <table cellspacing="0" rules="all" border="1">
+            <tbody id="dateTable">
+                <tr>
+                    <th>Дата</th>
+                    <th>Событие</th>
+                </tr>
+            </tbody>
         </table>    
     </div>
 </body>

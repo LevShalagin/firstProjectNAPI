@@ -1,16 +1,15 @@
-// var addon = require('bindings')('myAddon');
+var addon = require('bindings')('Release/myAddon.node');
 
-index = 1;
+console.log(addon.get_date("123", "123"));
 
 function addDate() {
-    let Date = prompt("Дата события дд.мм.гггг");
-    let Event = prompt("Какое событие?");
+    let date = prompt("Дата события дд.мм.гггг");
+    let event = prompt("Какое событие?");
 
-    let table = document.getElementById("dateTable");
+    console.log(addon.get_date(date, event));
 
-    // формирование строки сделать через аддон
-    document.getElementById("dateTable").innerHTML += "<tr><td>" + index + "</td><td>" + Date + "</td><td>" + Event + "</td>";
-    index += 1;
+    const el = document.getElementById("dateTable").innerHTML; 
+    el += addon.get_date(date, event);
 }
 
 function delDate() {
