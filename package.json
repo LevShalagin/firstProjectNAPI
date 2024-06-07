@@ -2,14 +2,14 @@
   "name": "first_project",
   "version": "0.0.0",
   "description": "Node.js Addons Example #1",
-  "main": "main.js",
+  "main": "script.js",
   "private": true,
   "dependencies": {
     "bindings": "~1.2.1",
     "gyp": "^0.3.0"
   },
   "scripts": {
-    "test": "node main.js"
+    "test": "node script.js"
   },
   "gypfile": true
 }
